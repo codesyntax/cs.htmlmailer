@@ -1,8 +1,8 @@
 Changelog
 =========
 
-2.0 (UNRELEASED)
--------------------
+2.0 (2020-02-10)
+----------------
 
 - python3 compatibility
   [erral]
