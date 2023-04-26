@@ -4,7 +4,6 @@ from email.header import Header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import formatdate
-from email.utils import make_msgid
 from html.parser import HTMLParser
 
 
@@ -64,7 +63,6 @@ def create_html_mail(
     if cc_addrs:
         msg["Cc"] = ", ".join(cc_addrs)
     msg["Date"] = formatdate(localtime=True)
-    msg["Message-ID"] = make_msgid()
     if headers:
         for key, value in headers.items():
             msg[key] = value
