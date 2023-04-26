@@ -10,9 +10,13 @@ setup(
     long_description=open("README.txt").read()
     + "\n"
     + open(os.path.join("docs", "HISTORY.txt")).read(),
-    # Get more strings from
-    # http://pypi.python.org/pypi?:action=list_classifiers
-    classifiers=["Programming Language :: Python"],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
     keywords="",
     author="Mikel Larreategi",
     author_email="mlarreategi@codesyntax.com",
